@@ -32,7 +32,8 @@
     document.documentElement.lang = lang;
     document.querySelectorAll("[data-i]").forEach(function (e) {
       var k = e.getAttribute("data-i");
-      if (t[k]) e.textContent = t[k];
+      var tv = t[k] || T.en[k];
+      if (tv) e.textContent = tv;
     });
     var v = VERSES[vi];
     $("vtext").textContent = "\u201C" + v.text[lang] + "\u201D";
@@ -43,7 +44,7 @@
       t.ticker.forEach(function (s) { group += "<span>" + s + "<i></i></span>"; });
     }
     $("tk").innerHTML = group + group;
-    renderDev();
+    renderDev(t);
   }
 
   var sel = $("lang");
@@ -58,7 +59,11 @@
   $("btnNext").onclick = function () { vi = (vi + 1) % VERSES.length; render(); };
 
   /* Modals with Android back-button support */
-  function openM(id) { $(id).classList.add("open"); history.pushState({ m: id }, ""); }
+  function openM(id) {
+    $(id).classList.add("open");
+    history.pushState({ m: id }, "");
+    if (id === "mDev" && window.devMeasure) devMeasure();
+  }
   function closeAll() { document.querySelectorAll(".modal.open").forEach(function (m) { m.classList.remove("open"); }); }
   window.addEventListener("popstate", closeAll);
   document.querySelectorAll("[data-close]").forEach(function (b) {
@@ -111,4 +116,24 @@
   applyTheme();
 
   render();
+
+  /* Ministry stats count-up */
+  document.querySelectorAll("[data-count]").forEach(function (b) {
+    var end = parseInt(b.getAttribute("data-count"), 10), t0 = null;
+    function step(ts) {
+      if (t0 === null) t0 = ts;
+      var p = Math.min(1, (ts - t0) / 1800);
+      b.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))).toLocaleString();
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  });
+
+  /* Hooks for popup.js and team.js */
+  window.GFA = {
+    open: openM,
+    close: function () { if (history.state && history.state.m) history.back(); else closeAll(); },
+    render: render,
+    toast: toast
+  };
 })();
