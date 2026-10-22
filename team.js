@@ -53,7 +53,7 @@ var TEAM = [
   var running = false;
   function canRun() {
     return !running && document.visibilityState === "visible" &&
-      !document.querySelector(".modal.open") && !document.querySelector(".pop");
+      !document.querySelector(".modal.open,.drawer.open") && !document.querySelector(".pop");
   }
   function parade() {
     if (!canRun()) return;
