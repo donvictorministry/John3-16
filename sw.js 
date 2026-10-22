@@ -1,7 +1,7 @@
-var CACHE = "gospel-for-all-v2";
+var CACHE = "gospel-for-all-v4";
 var FILES = [
   "./", "index.html", "styles.css", "app.js", "verse.js", "translation.js",
-  "about-developer.js", "block-computer.js", "manifest.json",
+  "about-developer.js", "popup.js", "team.js", "block-computer.js", "manifest.json",
   "icon-192.png", "icon-512.png", "og-image.png"
 ];
 
