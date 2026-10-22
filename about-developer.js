@@ -1,12 +1,40 @@
 /* Developer modal data.
    To use your real photo: open index.html, find <img id="devPhoto"> and replace its src with your photo URL,
-   or set DEV_PHOTO_URL below (example: "me.jpg" placed in the same folder). */
+   or set DEV_PHOTO_URL below (example: "me.jpg" placed in the same folder).
+   The popup and the team parade reuse this same photo automatically. */
 var DEV_PHOTO_URL = "";
 var DEV_NAME = "Chris Johnson, PhD";
 
-function renderDev() {
+function devLabel() {
+  var L = T[document.documentElement.lang] || T.en;
+  var b = document.getElementById("devBio");
+  var m = document.getElementById("devMore");
+  if (b && m) m.textContent = b.classList.contains("clamp") ? (L.showMore || T.en.showMore) : (L.showLess || T.en.showLess);
+}
+
+function renderDev(t) {
   var n = document.getElementById("devName");
   if (n) n.textContent = DEV_NAME;
   var p = document.getElementById("devPhoto");
   if (p && DEV_PHOTO_URL) p.src = DEV_PHOTO_URL;
+  var b = document.getElementById("devBio");
+  if (b && t) b.textContent = t.devBio + "\n" + (t.devMore || T.en.devMore).join("\n");
+  devLabel();
 }
+
+/* Show more / Show less after 5 lines */
+function devMeasure() {
+  var b = document.getElementById("devBio");
+  var m = document.getElementById("devMore");
+  if (!b || !m) return;
+  b.classList.add("clamp");
+  m.hidden = !(b.scrollHeight > b.clientHeight + 2);
+  devLabel();
+}
+(function () {
+  var m = document.getElementById("devMore");
+  if (m) m.onclick = function () {
+    document.getElementById("devBio").classList.toggle("clamp");
+    devLabel();
+  };
+})();
