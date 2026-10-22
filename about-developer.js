@@ -4,6 +4,8 @@
    The popup and the team parade reuse this same photo automatically. */
 var DEV_PHOTO_URL = "";
 var DEV_NAME = "Chris Johnson, PhD";
+/* Logo for the header and both sidebars: set a URL here, or replace icon-192.png */
+var LOGO_URL = "";
 
 function devLabel() {
   var L = T[document.documentElement.lang] || T.en;
@@ -17,6 +19,7 @@ function renderDev(t) {
   if (n) n.textContent = DEV_NAME;
   var p = document.getElementById("devPhoto");
   if (p && DEV_PHOTO_URL) p.src = DEV_PHOTO_URL;
+  if (LOGO_URL) document.querySelectorAll(".li").forEach(function (i) { i.src = LOGO_URL; });
   var b = document.getElementById("devBio");
   if (b && t) b.textContent = t.devBio + "\n" + (t.devMore || T.en.devMore).join("\n");
   devLabel();
