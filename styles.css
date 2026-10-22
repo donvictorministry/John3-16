@@ -57,3 +57,59 @@ select{width:100%;height:56px;padding:0 16px;border:1px solid var(--ol);border-r
 
 .toast{position:fixed;left:24px;top:50%;width:calc(100dvw - 48px);transform:translateY(-50%);background:var(--is);color:var(--ios);font-size:19px;text-align:center;padding:16px 22px;border-radius:28px;z-index:100;opacity:0;pointer-events:none;transition:opacity .2s}
 .toast.show{opacity:1}
+
+/* Ministry card */
+.mn{background:var(--pc);color:var(--opc);border-radius:28px;padding:22px 20px;display:flex;flex-direction:column;gap:12px}
+.mt{font-size:24px;font-weight:500}
+.ms{font-size:20px}
+.stats{display:flex;flex-wrap:wrap;gap:12px}
+.st{flex:1 1 40%;background:var(--s);color:var(--os);border-radius:20px;padding:12px 16px;display:flex;flex-direction:column}
+.st:first-child{flex-basis:100%}
+.st b{font-size:30px;font-weight:700;color:var(--p)}
+.st span{font-size:19px;color:var(--osv)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:19px;padding:6px 14px;border-radius:10px;background:var(--s);color:var(--osv);border:1px solid var(--ol)}
+
+/* Developer bio */
+.db{white-space:pre-line;text-align:left}
+.db.clamp{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+.tg{align-self:center;margin-top:8px;height:48px;padding:0 20px;border-radius:24px;color:var(--p);font-weight:500;position:relative;overflow:hidden}
+.tg[hidden]{display:none}
+
+/* Popup card */
+.pop{position:fixed;left:0;top:0;width:100dvw;height:100dvh;z-index:60;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;animation:fade .25s}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.pc{position:relative;width:calc(100dvw - 32px);max-height:calc(100dvh - 32px);overflow-y:auto;background:var(--sl);color:var(--os);border-radius:28px;padding:28px 20px 20px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 8px 28px rgba(0,0,0,.35);animation:pin .3s cubic-bezier(.2,0,0,1)}
+@keyframes pin{from{transform:scale(.9);opacity:0}to{transform:scale(1);opacity:1}}
+.pcx{position:absolute;right:8px;top:8px}
+.pph{width:126px;height:126px;border-radius:50%;padding:3px;background:var(--p);flex:none}
+.pph img{width:120px;height:120px;border-radius:50%;object-fit:cover;display:block;background:var(--sh)}
+.pn{font-size:24px;font-weight:500}
+.pro{font-size:19px;color:var(--p);font-weight:500;text-align:center}
+.ptx{width:100%;min-height:260px;font-size:21px;line-height:1.5;text-align:left;padding:12px 4px}
+.cur{display:inline-block;width:3px;height:1.1em;background:var(--p);margin-left:2px;vertical-align:text-bottom;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.pic{display:none;color:var(--p);vertical-align:middle;margin-left:6px}
+.dots{display:flex;gap:8px;margin:4px 0 8px}
+.dots span{width:10px;height:10px;border-radius:50%;background:var(--ol);opacity:.5}
+.dots span.on{background:var(--p);opacity:1}
+
+/* Team modal */
+.tm{overflow:hidden}
+.hb{display:flex;gap:4px}
+.tl{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:16px;padding:4px 0 8px;overscroll-behavior:contain}
+.tc{background:var(--sl);border-radius:24px;padding:22px 18px;display:flex;flex-direction:column;align-items:center;gap:10px;box-shadow:0 1px 3px rgba(0,0,0,.18);flex:none}
+.tp{width:150px;height:150px;border-radius:50%;object-fit:cover;display:block;border:3px solid var(--pc);background:var(--sh)}
+.tn2{font-size:22px;font-weight:500}
+.tr{font-size:19px;color:var(--p);font-weight:500;text-align:center}
+.tbio{font-size:19px;line-height:1.5;color:var(--osv);text-align:left;width:100%}
+.tb{flex:none;display:flex;justify-content:center;padding-top:8px}
+.fab{width:56px;height:56px;border-radius:16px;background:var(--pc);color:var(--opc);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,.25)}
+.fab::after,.tg::after{content:"";position:absolute;left:0;top:0;right:0;bottom:0;background:currentColor;opacity:0;transition:opacity .15s}
+.fab:active::after,.tg:active::after{opacity:.16}
+
+/* Photo parade */
+.pr{position:fixed;left:0;bottom:calc(env(safe-area-inset-bottom,0px) + 16px);z-index:40;display:flex;gap:18px;padding:10px 14px;width:max-content;background:var(--sl);border-radius:28px;box-shadow:0 4px 14px rgba(0,0,0,.3);will-change:transform}
+.pit{display:flex;flex-direction:column;align-items:center;gap:4px;width:100px}
+.pit img{width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid var(--p);background:var(--sh);display:block}
+.pit span{font-size:19px;font-weight:500;color:var(--os);white-space:nowrap}
