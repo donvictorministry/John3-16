@@ -2,6 +2,10 @@ var LANGS = {en:"English", es:"Español", fr:"Français", pt:"Português", sw:"K
 
 var T = {
   en: {
+    teamTitle:"Our Ministry Team", btnTeam:"Meet Our Team", btnWhy:"Why I Built This", showMore:"Show more", showLess:"Show less",
+    ministryTitle:"Digital Technology Ministry", statSouls:"souls to reach", statContinents:"continents", statLanguages:"languages",
+    popup:["I built this app and made it accessible because I believe the Gospel is for everyone. My vision to reach six million souls across six continents for the Lord has never been more urgent than it is now!", "Join me in sharing this app with at least two people every week! Together, let us spread the Gospel and trust God to work in our lives this season.", "Let me know through our WhatsApp community when you have done so.", "God bless you!"],
+    devMore:["Founder and lead developer of Biblefirm, a digital technology ministry.", "Builds Progressive Web Apps across education, community, productivity and engagement.", "Every app is made to run on low-cost Android phones, even with weak internet.", "Mission: to reach six million souls across six continents for the Lord.", "Gospel For All is free, open to everyone, and made to be shared."],
     tag:"Reaching six million souls across six continents", verseLbl:"Verse of Hope", next:"Next Verse",
     install:"Install App", shareApp:"Share App", contact:"Contact Us", about:"About Developer",
     shareTitle:"Share this app", shareSub:"Send Gospel For All to someone who needs hope",
@@ -15,6 +19,9 @@ var T = {
     ticker:["Reaching six million souls across six continents","The Word of God in nine languages","Install Gospel For All and share it with someone today"]
   },
   es: {
+    teamTitle:"Nuestro equipo ministerial", btnTeam:"Conoce a nuestro equipo", btnWhy:"Por qué creé esto", showMore:"Ver más", showLess:"Ver menos", ministryTitle:"Ministerio de tecnología digital", statSouls:"almas por alcanzar", statContinents:"continentes", statLanguages:"idiomas",
+    popup:["Creé esta app y la hice accesible porque creo que el Evangelio es para todos. Mi visión de llegar a seis millones de almas en seis continentes para el Señor nunca ha sido más urgente que ahora.", "¡Acompáñame a compartir esta app con al menos dos personas cada semana! Juntos, difundamos el Evangelio y confiemos en que Dios obre en nuestras vidas en esta temporada.", "Avísame a través de nuestra comunidad de WhatsApp cuando lo hayas hecho.", "¡Dios te bendiga!"],
+    devMore:["Fundador y desarrollador principal de Biblefirm, un ministerio de tecnología digital.", "Crea aplicaciones web progresivas de educación, comunidad, productividad y participación.", "Cada app está hecha para funcionar en teléfonos Android económicos, incluso con internet débil.", "Misión: llegar a seis millones de almas en seis continentes para el Señor.", "Gospel For All es gratis, abierta a todos y hecha para compartirse."],
     tag:"Llegando a seis millones de almas en seis continentes", verseLbl:"Versículo de esperanza", next:"Siguiente versículo",
     install:"Instalar app", shareApp:"Compartir app", contact:"Contáctanos", about:"Acerca del desarrollador",
     shareTitle:"Compartir esta app", shareSub:"Envía Gospel For All a alguien que necesita esperanza",
@@ -28,6 +35,9 @@ var T = {
     ticker:["Llegando a seis millones de almas en seis continentes","La Palabra de Dios en nueve idiomas","Instala Gospel For All y compártela hoy con alguien"]
   },
   fr: {
+    teamTitle:"Notre équipe ministérielle", btnTeam:"Rencontrer notre équipe", btnWhy:"Pourquoi j’ai créé ceci", showMore:"Voir plus", showLess:"Voir moins", ministryTitle:"Ministère de technologie numérique", statSouls:"âmes à atteindre", statContinents:"continents", statLanguages:"langues",
+    popup:["J’ai créé cette application et l’ai rendue accessible parce que je crois que l’Évangile est pour tous. Ma vision d’atteindre six millions d’âmes sur six continents pour le Seigneur n’a jamais été aussi urgente qu’aujourd’hui !", "Rejoignez-moi pour partager cette application avec au moins deux personnes chaque semaine ! Ensemble, répandons l’Évangile et faisons confiance à Dieu pour agir dans nos vies en cette saison.", "Faites-le-moi savoir via notre communauté WhatsApp lorsque vous l’aurez fait.", "Que Dieu vous bénisse !"],
+    devMore:["Fondateur et développeur principal de Biblefirm, un ministère de technologie numérique.", "Crée des applications web progressives pour l’éducation, la communauté, la productivité et l’engagement.", "Chaque application est conçue pour fonctionner sur des téléphones Android à bas prix, même avec une connexion faible.", "Mission : atteindre six millions d’âmes sur six continents pour le Seigneur.", "Gospel For All est gratuite, ouverte à tous et faite pour être partagée."],
     tag:"Atteindre six millions d’âmes sur six continents", verseLbl:"Verset d’espérance", next:"Verset suivant",
     install:"Installer l’app", shareApp:"Partager l’app", contact:"Nous contacter", about:"À propos du développeur",
     shareTitle:"Partager cette app", shareSub:"Envoyez Gospel For All à quelqu’un qui a besoin d’espoir",
@@ -41,6 +51,9 @@ var T = {
     ticker:["Atteindre six millions d’âmes sur six continents","La Parole de Dieu en neuf langues","Installez Gospel For All et partagez-la aujourd’hui"]
   },
   pt: {
+    teamTitle:"Nossa equipe ministerial", btnTeam:"Conheça nossa equipe", btnWhy:"Por que criei isto", showMore:"Ver mais", showLess:"Ver menos", ministryTitle:"Ministério de tecnologia digital", statSouls:"almas a alcançar", statContinents:"continentes", statLanguages:"idiomas",
+    popup:["Criei este aplicativo e o tornei acessível porque acredito que o Evangelho é para todos. Minha visão de alcançar seis milhões de almas em seis continentes para o Senhor nunca foi tão urgente quanto agora!", "Junte-se a mim para compartilhar este aplicativo com pelo menos duas pessoas toda semana! Juntos, vamos espalhar o Evangelho e confiar que Deus agirá em nossas vidas nesta estação.", "Avise-me pela nossa comunidade no WhatsApp quando tiver feito isso.", "Deus te abençoe!"],
+    devMore:["Fundador e desenvolvedor principal do Biblefirm, um ministério de tecnologia digital.", "Cria aplicativos web progressivos de educação, comunidade, produtividade e engajamento.", "Cada aplicativo é feito para funcionar em celulares Android de baixo custo, mesmo com internet fraca.", "Missão: alcançar seis milhões de almas em seis continentes para o Senhor.", "O Gospel For All é gratuito, aberto a todos e feito para ser compartilhado."],
     tag:"Alcançando seis milhões de almas em seis continentes", verseLbl:"Versículo de esperança", next:"Próximo versículo",
     install:"Instalar app", shareApp:"Compartilhar app", contact:"Fale conosco", about:"Sobre o desenvolvedor",
     shareTitle:"Compartilhar este app", shareSub:"Envie o Gospel For All a alguém que precisa de esperança",
@@ -54,6 +67,9 @@ var T = {
     ticker:["Alcançando seis milhões de almas em seis continentes","A Palavra de Deus em nove idiomas","Instale o Gospel For All e compartilhe hoje com alguém"]
   },
   sw: {
+    teamTitle:"Timu Yetu ya Huduma", btnTeam:"Kutana na Timu Yetu", btnWhy:"Kwa Nini Nimeunda Hii", showMore:"Onyesha zaidi", showLess:"Onyesha kidogo", ministryTitle:"Huduma ya Teknolojia ya Kidijitali", statSouls:"roho za kufikia", statContinents:"mabara", statLanguages:"lugha",
+    popup:["Nimeunda programu hii na kuifanya ipatikane kwa wote kwa sababu ninaamini Injili ni kwa kila mtu. Maono yangu ya kuwafikia roho milioni sita katika mabara sita kwa ajili ya Bwana hayajawahi kuwa ya dharura kuliko sasa!", "Jiunge nami kushiriki programu hii na watu wasiopungua wawili kila wiki! Pamoja, tueneze Injili na tumtumaini Mungu atende kazi katika maisha yetu msimu huu.", "Nijulishe kupitia jumuiya yetu ya WhatsApp utakapokuwa umefanya hivyo.", "Mungu akubariki!"],
+    devMore:["Mwanzilishi na msanidi mkuu wa Biblefirm, huduma ya teknolojia ya kidijitali.", "Hujenga programu za wavuti kwa elimu, jamii, tija na ushiriki.", "Kila programu imetengenezwa ifanye kazi kwenye simu za Android za bei nafuu, hata kwa mtandao dhaifu.", "Dhamira: kuwafikia roho milioni sita katika mabara sita kwa ajili ya Bwana.", "Gospel For All ni bure, wazi kwa kila mtu, na imetengenezwa ili ishirikiwe."],
     tag:"Kuwafikia roho milioni sita katika mabara sita", verseLbl:"Aya ya Matumaini", next:"Aya Inayofuata",
     install:"Sakinisha Programu", shareApp:"Shiriki Programu", contact:"Wasiliana Nasi", about:"Kuhusu Msanidi",
     shareTitle:"Shiriki programu hii", shareSub:"Mtumie Gospel For All mtu anayehitaji matumaini",
@@ -67,6 +83,9 @@ var T = {
     ticker:["Kuwafikia roho milioni sita katika mabara sita","Neno la Mungu kwa lugha tisa","Sakinisha Gospel For All na umshirikishe mtu leo"]
   },
   de: {
+    teamTitle:"Unser Dienstteam", btnTeam:"Unser Team kennenlernen", btnWhy:"Warum ich das gebaut habe", showMore:"Mehr anzeigen", showLess:"Weniger anzeigen", ministryTitle:"Digitaler Technologie-Dienst", statSouls:"Seelen zu erreichen", statContinents:"Kontinente", statLanguages:"Sprachen",
+    popup:["Ich habe diese App entwickelt und zugänglich gemacht, weil ich glaube, dass das Evangelium für alle da ist. Meine Vision, sechs Millionen Seelen auf sechs Kontinenten für den Herrn zu erreichen, war nie dringender als jetzt!", "Begleite mich dabei, diese App jede Woche mit mindestens zwei Menschen zu teilen! Gemeinsam wollen wir das Evangelium verbreiten und darauf vertrauen, dass Gott in dieser Zeit in unserem Leben wirkt.", "Lass es mich über unsere WhatsApp-Community wissen, wenn du es getan hast.", "Gott segne dich!"],
+    devMore:["Gründer und Lead-Entwickler von Biblefirm, einem digitalen Technologie-Dienst.", "Entwickelt Progressive Web Apps für Bildung, Gemeinschaft, Produktivität und Engagement.", "Jede App läuft auf günstigen Android-Handys, auch bei schwachem Internet.", "Auftrag: sechs Millionen Seelen auf sechs Kontinenten für den Herrn zu erreichen.", "Gospel For All ist kostenlos, für alle offen und zum Teilen gemacht."],
     tag:"Sechs Millionen Seelen auf sechs Kontinenten erreichen", verseLbl:"Vers der Hoffnung", next:"Nächster Vers",
     install:"App installieren", shareApp:"App teilen", contact:"Kontakt", about:"Über den Entwickler",
     shareTitle:"Diese App teilen", shareSub:"Sende Gospel For All an jemanden, der Hoffnung braucht",
@@ -80,6 +99,9 @@ var T = {
     ticker:["Sechs Millionen Seelen auf sechs Kontinenten erreichen","Gottes Wort in neun Sprachen","Installiere Gospel For All und teile sie noch heute"]
   },
   ha: {
+    teamTitle:"Ƙungiyar Hidimarmu", btnTeam:"Ku Haɗu da Ƙungiyarmu", btnWhy:"Dalilin da Ya Sa Na Gina Wannan", showMore:"Nuna ƙari", showLess:"Nuna kaɗan", ministryTitle:"Hidimar Fasahar Zamani", statSouls:"rayuka da za a isa gare su", statContinents:"nahiyoyi", statLanguages:"harsuna",
+    popup:["Na gina wannan manhaja kuma na sa ta ta kasance a hannun kowa saboda na gaskata cewa Bishara ta kowa ce. Burina na isa ga rayuka miliyan shida a nahiyoyi shida domin Ubangiji bai taɓa zama mai gaggawa kamar yanzu ba!", "Ku haɗu da ni wajen raba wannan manhaja da mutum biyu aƙalla kowane mako! Tare, mu yaɗa Bishara mu kuma dogara ga Allah ya yi aiki a rayuwarmu a wannan lokaci.", "Ku sanar da ni ta cikin al’ummarmu ta WhatsApp idan kun yi haka.", "Allah ya albarkace ku!"],
+    devMore:["Wanda ya kafa kuma babban mai ginawa na Biblefirm, hidimar fasahar zamani.", "Yana gina manhajojin yanar gizo don ilimi, jama’a, aiki da shiga cikin al’amura.", "An yi kowace manhaja ta yi aiki a wayoyin Android marasa tsada, ko da intanet ba ta da ƙarfi.", "Manufa: isa ga rayuka miliyan shida a nahiyoyi shida domin Ubangiji.", "Gospel For All kyauta ce, a buɗe take ga kowa, kuma an yi ta domin a raba."],
     tag:"Isa ga rayuka miliyan shida a nahiyoyi shida", verseLbl:"Ayar Bege", next:"Aya ta Gaba",
     install:"Sanya Manhaja", shareApp:"Raba Manhaja", contact:"Tuntuɓe Mu", about:"Game da Mai Ginawa",
     shareTitle:"Raba wannan manhaja", shareSub:"Aika Gospel For All ga wanda yake bukatar bege",
@@ -93,6 +115,9 @@ var T = {
     ticker:["Isa ga rayuka miliyan shida a nahiyoyi shida","Maganar Allah da harsuna tara","Sanya Gospel For All ka raba ta da wani yau"]
   },
   yo: {
+    teamTitle:"Ẹgbẹ́ Iṣẹ́ Ìránṣẹ́ Wa", btnTeam:"Pàdé Ẹgbẹ́ Wa", btnWhy:"Ìdí Tí Mo Fi Kọ́ Èyí", showMore:"Fi díẹ̀ sí i hàn", showLess:"Fi díẹ̀ hàn", ministryTitle:"Iṣẹ́ Ìránṣẹ́ Ìmọ̀ Ẹ̀rọ Ayélujára", statSouls:"ọkàn tí a fẹ́ dé", statContinents:"kọ́ńtínẹ́ǹtì", statLanguages:"èdè",
+    popup:["Mo kọ ìṣàfilọ́lẹ̀ yìí, mo sì jẹ́ kí ó wà fún gbogbo ènìyàn nítorí mo gbàgbọ́ pé Ìhìn Rere wà fún gbogbo ènìyàn. Ìran mi láti dé ọ̀dọ̀ ọkàn miliọnu mẹ́fà ní kọ́ńtínẹ́ǹtì mẹ́fà fún Olúwa kò tíì jẹ́ kánjúkánjú ju báyìí lọ!", "Darapọ̀ mọ́ mi láti pín ìṣàfilọ́lẹ̀ yìí fún ó kéré tán ènìyàn méjì ní ọ̀sẹ̀ kọ̀ọ̀kan! Papọ̀, ẹ jẹ́ kí a tan Ìhìn Rere kálẹ̀ kí a sì gbẹ́kẹ̀lé Ọlọ́run láti ṣiṣẹ́ nínú ayé wa ní àsìkò yìí.", "Jẹ́ kí n mọ̀ nípasẹ̀ àwùjọ WhatsApp wa nígbà tí o bá ti ṣe é.", "Ọlọ́run bùkún fún ọ!"],
+    devMore:["Olùdásílẹ̀ àti olùdàgbàsókè àgbà Biblefirm, iṣẹ́ ìránṣẹ́ ìmọ̀ ẹ̀rọ ayélujára.", "Ó ń kọ́ àwọn ìṣàfilọ́lẹ̀ wẹ́ẹ̀bù fún ẹ̀kọ́, àwùjọ, iṣẹ́ àti ìkópa.", "A ṣe gbogbo ìṣàfilọ́lẹ̀ láti ṣiṣẹ́ lórí fóònù Android olówó pọ́ọ́kú, kódà pẹ̀lú íńtánẹ́ẹ̀tì tó lọ́ra.", "Ète: láti dé ọ̀dọ̀ ọkàn miliọnu mẹ́fà ní kọ́ńtínẹ́ǹtì mẹ́fà fún Olúwa.", "Gospel For All jẹ́ ọ̀fẹ́, ó ṣí sílẹ̀ fún gbogbo ènìyàn, a sì ṣe é láti pín."],
     tag:"Kíkàn sí ọkàn miliọnu mẹ́fà ní kọ́ńtínẹ́ǹtì mẹ́fà", verseLbl:"Ẹsẹ Ìrètí", next:"Ẹsẹ Tó Kàn",
     install:"Fi Ìṣàfilọ́lẹ̀ Sórí Ẹ̀rọ", shareApp:"Pín Ìṣàfilọ́lẹ̀", contact:"Kàn sí Wa", about:"Nípa Olùdásílẹ̀",
     shareTitle:"Pín ìṣàfilọ́lẹ̀ yìí", shareSub:"Fi Gospel For All ránṣẹ́ sí ẹni tó nílò ìrètí",
@@ -106,6 +131,9 @@ var T = {
     ticker:["Kíkàn sí ọkàn miliọnu mẹ́fà ní kọ́ńtínẹ́ǹtì mẹ́fà","Ọ̀rọ̀ Ọlọ́run ní èdè mẹ́sàn-án","Fi Gospel For All sórí ẹ̀rọ rẹ kí o sì pín in fún ẹnìkan lónìí"]
   },
   ig: {
+    teamTitle:"Ndị Otu Ozi Anyị", btnTeam:"Zute Ndị Otu Anyị", btnWhy:"Ihe Mere M Ji Wuo Nke A", showMore:"Gosi ọzọ", showLess:"Gosi nta", ministryTitle:"Ozi Teknụzụ Dijitalụ", statSouls:"mkpụrụobi a ga-eru", statContinents:"ọkwa ụwa", statLanguages:"asụsụ",
+    popup:["Ewuru m app a ma mee ka o dị mmadụ niile nso n’ihi na ekwere m na Oziọma bụ maka onye ọ bụla. Ọhụụ m iru mkpụrụobi nde isii n’ọkwa ụwa isii maka Onyenwe anyị adịbeghị ngwa ngwa karịa ugbu a!", "Soro m kekọrịta app a nye ma ọ dịkarịa ala mmadụ abụọ kwa izu! Ọnụ, ka anyị gbasaa Oziọma ma tụkwasị Chineke obi ka O rụọ ọrụ n’ndụ anyị n’oge a.", "Gwa m site n’obodo WhatsApp anyị mgbe i mere ya.", "Chineke gọzie gị!"],
+    devMore:["Onye malitere na onye isi mmepụta Biblefirm, ozi teknụzụ dijitalụ.", "Na-ewu app weebụ maka agụmakwụkwọ, obodo, ọrụ na mmekọrịta.", "Emere app ọ bụla ka ọ rụọ ọrụ n’ekwentị Android ndị na-adịghị oke ọnụ, ọbụna mgbe ịntanetị adịghị ike.", "Ọrụ: iru mkpụrụobi nde isii n’ọkwa ụwa isii maka Onyenwe anyị.", "Gospel For All bụ n’efu, mepere emepe maka mmadụ niile, emekwara ka e kekọrịta ya."],
     tag:"Iru mkpụrụobi nde isii n’ọkwa ụwa isii", verseLbl:"Amaokwu Olileanya", next:"Amaokwu Na-esote",
     install:"Wụnye App", shareApp:"Kekọrịta App", contact:"Kpọtụrụ Anyị", about:"Maka Onye Mepụtara",
     shareTitle:"Kekọrịta app a", shareSub:"Zipu Gospel For All nye onye chọrọ olileanya",
