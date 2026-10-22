@@ -1,7 +1,7 @@
-var CACHE = "gospel-for-all-v4";
+var CACHE = "gospel-for-all-v5";
 var FILES = [
   "./", "index.html", "styles.css", "app.js", "verse.js", "translation.js",
-  "about-developer.js", "popup.js", "team.js", "block-computer.js", "manifest.json",
+  "about-developer.js", "popup.js", "team.js", "stats.js", "quiz.js", "block-computer.js", "manifest.json",
   "icon-192.png", "icon-512.png", "og-image.png"
 ];
 
@@ -19,6 +19,7 @@ self.addEventListener("activate", function (e) {
 
 self.addEventListener("fetch", function (e) {
   if (e.request.method !== "GET") return;
+  if (new URL(e.request.url).origin !== self.location.origin) return;
   e.respondWith(
     caches.match(e.request).then(function (hit) {
       return hit || fetch(e.request).then(function (res) {
