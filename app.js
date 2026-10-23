@@ -66,22 +66,29 @@
 
   $("btnNext").onclick = function () { vi = (vi + 1) % VERSES.length; render(); };
 
-  /* Drawers, modals and Android back-button support */
-  var scrim = $("scrim");
-  function closeAll() {
+  /* Drawers and modals use a back stack, like a native Android app:
+     sidebar > page > back arrow returns to the sidebar > back arrow returns Home */
+  var scrim = $("scrim"), stack = [];
+  function showTop() {
     document.querySelectorAll(".drawer.open,.modal.open").forEach(function (m) { m.classList.remove("open"); });
     scrim.classList.remove("show");
-  }
-  function openM(id) {
-    var rep = document.querySelector(".drawer.open,.modal.open");
-    closeAll();
+    var id = stack[stack.length - 1];
+    if (!id) return;
     $(id).classList.add("open");
     if (id.charAt(0) === "d") scrim.classList.add("show");
-    history[rep ? "replaceState" : "pushState"]({ m: id }, "");
     if (id === "mDev" && window.devMeasure) devMeasure();
   }
-  function closeM() { if (history.state && history.state.m) history.back(); else closeAll(); }
-  window.addEventListener("popstate", closeAll);
+  function openM(id) {
+    if (stack[stack.length - 1] === id) return;
+    stack.push(id);
+    history.pushState({ n: stack.length }, "");
+    showTop();
+  }
+  function closeM() { if (stack.length) history.back(); else showTop(); }
+  window.addEventListener("popstate", function (e) {
+    stack.length = Math.min(stack.length, (e.state && e.state.n) || 0);
+    showTop();
+  });
   scrim.onclick = closeM;
   document.querySelectorAll("[data-close]").forEach(function (b) { b.onclick = closeM; });
   document.querySelectorAll("[data-go]").forEach(function (b) { b.onclick = function () { openM(b.getAttribute("data-go")); }; });
