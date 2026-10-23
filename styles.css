@@ -182,3 +182,29 @@ html[data-theme="blue"]{--p:#0061A4;--op:#FFFFFF;--pc:#D1E4FF;--opc:#001D36;--sc
 .mh{justify-content:flex-start;gap:8px}
 .mh h2{flex:1}
 .dbk{position:absolute;left:8px;top:calc(env(safe-area-inset-top,0px) + 8px)}
+
+/* ===== More page: native-style action buttons and trivia pages ===== */
+.mhd{font-size:26px;font-weight:700;color:var(--p)}
+.mps{font-size:20px;color:var(--osv);margin-top:-8px}
+.mbs{display:flex;flex-direction:column;gap:14px}
+.mb{position:relative;overflow:hidden;width:100%;min-height:92px;display:flex;align-items:center;gap:16px;padding:14px 18px;border-radius:28px;color:#fff;text-align:left;box-shadow:0 2px 6px rgba(0,0,0,.3)}
+.mb::after{content:"";position:absolute;left:0;top:0;right:0;bottom:0;background:#fff;opacity:0;transition:opacity .15s}
+.mb:active::after{opacity:.2}
+.mi{width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;flex:none}
+.mtx{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.mtx b{font-size:22px;font-weight:700}
+.mtx span{font-size:19px;opacity:.94}
+.chev{margin-left:auto;flex:none}
+.qp{font-size:19px;font-weight:500;color:var(--osv)}
+.qb{height:8px;border-radius:4px;background:var(--sv);margin:8px 0 14px;overflow:hidden}
+.qb i{display:block;height:100%;background:var(--p);border-radius:4px;transition:width .3s}
+.qc{font-size:19px;font-weight:500;color:var(--p);text-transform:capitalize}
+.qq{font-size:24px;font-weight:500;line-height:1.35;margin:8px 0 18px}
+.qos{display:flex;flex-direction:column;gap:12px}
+.qo{position:relative;overflow:hidden;width:100%;min-height:60px;padding:12px 18px;border:2px solid var(--ol);border-radius:18px;background:var(--sl);color:var(--os);font-size:20px;font-weight:500;text-align:left}
+.qo.ok{background:#2E7D32;border-color:#2E7D32;color:#fff}
+.qo.no{background:#C62828;border-color:#C62828;color:#fff}
+.qv{display:flex;gap:12px;align-items:flex-start;margin:18px 0 14px;padding:16px;border-radius:20px;background:var(--pc);color:var(--opc);font-size:19px;line-height:1.45;text-align:left}
+.qr{display:flex;flex-direction:column;gap:8px;align-items:center;text-align:center}
+.qsc{font-size:56px;font-weight:700;color:var(--p)}
+.qr .stack{width:100%}
