@@ -34,9 +34,8 @@ var TEAM = [
   sec.className = "modal tm";
   sec.id = "mTeam";
   sec.innerHTML =
-    '<div class="mh"><h2 data-i="teamTitle"></h2><div class="hb">' +
-    '<button class="x" id="tDown" aria-label="Jump to bottom"><svg class="ic"><use href="#i-down"/></svg></button>' +
-    '<button class="x" id="tClose" aria-label="Close"><svg class="ic"><use href="#i-x"/></svg></button></div></div>' +
+    '<div class="mh"><button class="x" id="tClose" aria-label="Back"><svg class="ic"><use href="#i-back"/></svg></button><h2 data-i="teamTitle"></h2>' +
+    '<button class="x" id="tDown" aria-label="Jump to bottom"><svg class="ic"><use href="#i-down"/></svg></button></div>' +
     '<div class="tl" id="tl">' + cards + '</div>' +
     '<div class="tb"><button class="fab" id="tUp" aria-label="Jump to top"><svg class="ic"><use href="#i-up"/></svg></button></div>';
   document.body.appendChild(sec);
