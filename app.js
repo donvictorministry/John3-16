@@ -68,12 +68,14 @@
 
   /* Drawers and modals use a back stack, like a native Android app:
      sidebar > page > back arrow returns to the sidebar > back arrow returns Home */
-  var scrim = $("scrim"), stack = [];
+  var scrim = $("scrim"), stack = [], HOOKS = {};
   function showTop() {
     document.querySelectorAll(".drawer.open,.modal.open").forEach(function (m) { m.classList.remove("open"); });
     scrim.classList.remove("show");
     var id = stack[stack.length - 1];
+    Object.keys(HOOKS).forEach(function (k) { var h = HOOKS[k]; if (k !== id && h.on) { h.on = false; h.close(); } });
     if (!id) return;
+    if (HOOKS[id]) { if (!HOOKS[id].on) { HOOKS[id].on = true; HOOKS[id].open(); } return; }
     $(id).classList.add("open");
     if (id.charAt(0) === "d") scrim.classList.add("show");
     if (id === "mDev" && window.devMeasure) devMeasure();
@@ -174,12 +176,23 @@
     requestAnimationFrame(step);
   });
 
-  /* Hooks for popup.js and team.js */
+  /* Small shell used by game.js (the JESUS puzzle expects a DV object) */
+  var dv = {
+    routes: {},
+    addNavItem: function () {},
+    route: function (k, c) { dv.routes[k] = c; },
+    logActivity: function () {},
+    closeRoute: closeM
+  };
+  window.DV = dv;
+
+  /* Hooks for popup.js, team.js and quiz.js */
   window.GFA = {
     open: openM,
     close: closeM,
     t: function (k) { return (T[lang] || T.en)[k] || T.en[k]; },
     render: render,
+    hook: function (id, open, close) { HOOKS[id] = { open: open, close: close, on: false }; },
     toast: toast
   };
 })();
